@@ -1,0 +1,27 @@
+[project]
+name = "lpc"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Noel Schwabenland", email = "noel@schwabenland.ch" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.5.3",
+    "perfplot>=0.10.2",
+    "rich>=15.0.0",
+    "timeit-decorator>=2.2.4",
+]
+
+[project.scripts]
+lpc = "lpc:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
