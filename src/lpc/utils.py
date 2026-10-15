@@ -33,3 +33,9 @@ def compare_two_implementations(f: Callable, g: Callable, *, n=1):
         # relative_to=1,  # plot the timings relative to one of the measurements
         # flops=lambda n: 3*n,  # FLOPS plots
     )
+
+
+
+def dummy_function() -> None:
+    pass
+
